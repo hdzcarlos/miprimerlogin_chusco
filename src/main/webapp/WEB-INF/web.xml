@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>ServicioLogin</servlet-name>
+    <servlet-class>com.cice.servlet.ServicioLogin</servlet-class>
+    <init-param>
+      <param-name>com.cice.servlet.ServicioLogin</param-name>
+      <param-value>com.cice.servlet.ServicioLogin</param-value>
+    </init-param>
+    <init-param>
+      <param-name>requestProcessorAttribute</param-name>
+      <param-value>ServicioLoginn</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>ServicioRegistro</servlet-name>
+    <servlet-class>com.cice.servlet.ServicioRegistro</servlet-class>
+  <init-param>
+    <param-name>com.cice.servlet.ServicioRegistro</param-name>
+    <param-value>ServicioRegistro</param-value>
+  </init-param>
+    <init-param>
+      <param-name>requestProcessorAttribute</param-name>
+      <param-value>ServicioRegistroo</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ServicioLogin</servlet-name>
+    <url-pattern>/ServicioLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ServicioRegistro</servlet-name>
+    <url-pattern>/ServicioRegistro</url-pattern>
+  </servlet-mapping>
+
+</web-app>
